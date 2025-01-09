@@ -6,8 +6,8 @@ import json
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    url = "https://<sua-conta-cosmos-db>.documents.azure.com:443/"
-    key = "<sua-chave-cosmos-db>"
+    url = "conta"
+    key = "<chave>"
 
     client = CosmosClient(url, credential=key)
     database_name = 'NetflixCatalog'
